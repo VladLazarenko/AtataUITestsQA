@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://qa.datatodeals.com/"
+  //"baseUrl": "https://qa-dashboard.datatodeals.com/"
+  // Other environment specific configuration properties can be added here.
+}

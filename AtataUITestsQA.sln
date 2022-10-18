@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtataUITestsQA", "AtataUITestsQA\AtataUITestsQA.csproj", "{54AD99C5-1CA4-4012-ADF6-81284F9F4385}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A81B71AC-D517-442C-B72D-AD90E747AEEB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtataApp.UITests.Components", "AtataApp.UITests.Components\AtataApp.UITests.Components.csproj", "{315F28AB-A340-4FF9-BD33-40964B65FAF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54AD99C5-1CA4-4012-ADF6-81284F9F4385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AD99C5-1CA4-4012-ADF6-81284F9F4385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AD99C5-1CA4-4012-ADF6-81284F9F4385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AD99C5-1CA4-4012-ADF6-81284F9F4385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315F28AB-A340-4FF9-BD33-40964B65FAF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315F28AB-A340-4FF9-BD33-40964B65FAF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315F28AB-A340-4FF9-BD33-40964B65FAF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315F28AB-A340-4FF9-BD33-40964B65FAF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06C85F3B-3008-4916-A101-A6A85EDFC533}
+	EndGlobalSection
+EndGlobal
