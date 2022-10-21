@@ -41,4 +41,16 @@ namespace AtataApp.UITests.Components.Controls
             AbsenceTimeout = 10;
         }
     }
+    
+    public class WaitForTableIsLoaded : WaitForElementAttribute
+    {
+        public WaitForTableIsLoaded(TriggerEvents on = TriggerEvents.Init, Until until = Until.VisibleThenMissingOrHidden)
+            : base (WaitBy.XPath, "//*[contains(text(), 'Processing...')]", until, on)
+        {
+            PresenceTimeout = 1;
+            ThrowOnPresenceFailure = false;
+
+            AbsenceTimeout = 10;
+        }
+    }
 }

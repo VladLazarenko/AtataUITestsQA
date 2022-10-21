@@ -14,6 +14,7 @@ namespace AtataApp.UITests.Components.Enum
         Arizona,
         Arkansas,
         California,
-        Nevada
+        Nevada,
+        Connecticut
     }
 }

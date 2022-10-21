@@ -22,4 +22,10 @@ namespace AtataApp.UITests.Components.Controls
         where TOwner : PageObject<TOwner>
     {
     }
+    
+    [ListItemDefinition("*", "list item")]
+    public class DefaultListItem<TOwner> : ListItem<TOwner> 
+        where TOwner : PageObject<TOwner>
+    {
+    }
 }

@@ -8,7 +8,9 @@ namespace AtataApp.UITests.Components.DataProvider
     {
         public const string PARENT_EMAIL = "parent-user-qa@putsbox.com";
         public const string AGENT_EMAIL = "vlad-qa-lazarenko@putsbox.com";
+        public const string MASTER_ADMIN_EMAIL = "_tu@zetmail.com";
         public const string PASSWORD = "Test123!";
+        public const string MASTER_ADMIN_PASSWORD = "Welcome@123";
         public const string AGENT_USER_NAME = "Vlad Lazarenko";
     }
 

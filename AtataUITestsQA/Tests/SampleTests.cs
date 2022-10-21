@@ -8,6 +8,7 @@ using AtataUITestsQA.Components;
 using NUnit.Framework;
 using PutsboxWrapper;
 using AtataApp.UITests.Components.StepDefinitions;
+using AtataApp.UITests.Components.PageObjects.Parent;
 
 namespace AtataUITestsQA
 {
@@ -162,7 +163,7 @@ namespace AtataUITestsQA
                      {
                          x.FileName.Should.Exist();
                          x.Expand().WaitSeconds(1);
-                         
+
                          x.ExpandedFiles[x => x.FileName == "file1.docx"].Should.Exist();
                          x.ExpandedFiles[x => x.FileName == "file1.docx"].CreatedDate.Should.Equal("October 14, 2022");
                          x.ExpandedFiles[x => x.FileName == "file1.docx"].Checkbox.Check();
@@ -174,40 +175,32 @@ namespace AtataUITestsQA
             AtataContext.Current.Artifacts.Should.WithinSeconds(10).ContainFiles("file1.docx");
                         
 
-
-
-
-
-
-
-
-                     //WaitSeconds(10);
-
-
-
-
-
-
-
-
-
-                 //ClickHere.Click().
-
-                 //Do(_ => _.Files[x => x.FileName == "Unexecuted CA_SecurityLevel13422114436.pdf"], x =>
-                 //{
-                 //    x.FileName.Should.Exist();
-                 //    x.DateAdded.Should.Equal("May 05, 2022");
-                 //    x.Checkbox.Click();
-                 //}).
-
-
-
-
-                // Download.Click();
-
-
-
             
         }
+
+        [TestCase]
+        public void CheckPagination()
+        {
+            Go.To<LoginParent>().
+              LoginPopup.Click().
+              EmailAddress.Type(Credentials.AGENT_EMAIL).
+              Password.Type(Credentials.PASSWORD).
+              Login.Click();
+
+
+            Go.To<CollabListings>().
+                Pagination.SelectedPageNumber.Should.Equal(1).
+
+                Pagination.Next().
+                Pagination.SelectedPageNumber.Should.Equal(2).
+
+                Pagination.FindButtonByPageNumber(3).Click().
+                Pagination.SelectedPageNumber.Should.Equal(3).
+
+                Pagination.Privious().
+                Pagination.SelectedPageNumber.Should.Equal(2);
+        }
+
+
     }
 }
